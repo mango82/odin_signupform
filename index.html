@@ -11,25 +11,40 @@
     <div id="flex-container">
         <aside>Logo + background image</aside>
         <main>
-            <article>
+            <article class="flex-item-1">
                 <h2>This is not a real online service! You know you need something like this in 
                 your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
                 </h2>
                 <h2>You <em>know</em> you want to.</h2>
             </article>
-            <article>
-                <h2>Let's do this!</h2>
-                <p>First Name</p>
-                <p>Last Name</p>
-                <p>Email</p>
-                <p>Phone Number</p>
-                <p>Password</p>
-                <p>Confirm Password</p>
-            </article>
-            <article>
-                <button>Create Account</button>
-                <p>Already have an account? <a href="">Log In</a></p>
-            </article>
+            <form class="flex-item-2" action="">
+                <fieldset>
+                    <h2>Let's do this!</h2>
+                    <div class="form-container">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first_name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last_name">
+                        
+                    </div>
+                    <div class="form-container">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number">
+                    </div>
+                    <div class="form-container">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password">
+                    </div>
+                </fieldset>
+                <article class="form-article">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log In</a></p>
+                </article>
+            </form>
         </main>
     </div>
     <footer>
